@@ -51,10 +51,10 @@ export default function MyHome() {
       });
 
     getMessage();
+
+    let textarea = document.querySelector('textarea') as HTMLTextAreaElement;
+    textarea.value = '';
   };
-  // useEffect(() => {
-  //   console.log('USEEFFECT TRIGGERED_____________' + allMessage);
-  // }, [allMessage]);
 
   return (
     <>
