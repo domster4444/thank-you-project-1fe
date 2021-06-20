@@ -1,0 +1,103 @@
+#HomePage {
+  background-color: rgb(244, 241, 242);
+  margin: 3rem;
+  //   background: chartreuse;
+  box-shadow: 0px 6px 6px 0px rgb(179, 177, 178);
+  border-radius: 1.2rem;
+
+  h1 {
+    span {
+      color: rgb(210, 105, 30);
+    }
+    font-size: 7rem;
+    margin: 0;
+  }
+  h5 {
+    color: rgb(179, 177, 178);
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .contentBlock {
+    border-right: 1px solid rgb(179, 177, 178);
+    // background: blue;
+    display: flex;
+    @include media('<=720px') {
+      flex-wrap: wrap;
+    }
+    justify-content: center;
+  }
+  #rightDivision {
+    padding-top: 10rem;
+    // background: red;
+    .cardSection {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 2rem 0rem;
+      .tokencard {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  #leftDivision {
+    padding-bottom: 2rem;
+    .addTokenCard {
+      button {
+        background: rgb(225, 211, 200);
+        border: none;
+        color: white;
+        border-radius: 0.8rem;
+        &:active {
+          box-shadow: 0px 0px 0px 15px rgba(225, 211, 200, 0.4);
+        }
+        &:hover {
+          //   background: black;
+          //   color: white;
+        }
+
+        padding: 1rem 2rem;
+        font-size: 1.7rem;
+      }
+      label {
+        strong {
+          color: rgb(179, 177, 178);
+        }
+        font-size: 1.6rem;
+      }
+      textarea {
+        text-align: center;
+        font-size: 2rem;
+        outline: none;
+        border: none;
+        border-radius: 1rem;
+        &:focus {
+          border: 1px solid rgba(225, 211, 200, 0.2);
+          border-radius: 2rem;
+          box-shadow: 0px 0px 0px 10px rgba(225, 211, 200, 0.2);
+        }
+      }
+    }
+    @include media('<=720px') {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    // background: pink;
+    img {
+      height: 45rem;
+      @include media('<=1370px') {
+        height: 55rem;
+      }
+      @include media('<=955px') {
+        height: 45rem;
+      }
+      @include media('<=820px') {
+        height: 35rem;
+      }
+      @include media('<=720px') {
+        height: 25rem;
+      }
+    }
+  }
+}

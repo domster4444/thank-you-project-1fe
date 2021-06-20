@@ -1,0 +1,16 @@
+.containerCenter {
+  display: flex;
+
+  justify-content: center;
+}
+
+.contentBlock {
+  @include media('<=1351px') {
+    width: 95% !important;
+  }
+  @include media('<=958px') {
+    width: 98% !important;
+  }
+  display: flex;
+  width: 75% !important;
+}

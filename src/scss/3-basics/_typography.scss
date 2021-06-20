@@ -1,0 +1,36 @@
+// Lato Regular
+
+// .lato_regular_base{
+//     font-family: 'Lato_Lighty';
+//     color: black;
+//     font-weight: 400;
+// }
+// .lato_regular_10{
+//     @extend .lato_regular_base;
+//     font-size: 10px;
+// }
+// .lato_regular_11{
+//     @extend .lato_regular_base;
+//     font-size: 11px;
+// }
+// .lato_regular_12{
+//     @extend .lato_regular_base;
+//     font-size: 12px;
+// }
+// .lato_regular_13{
+//     @extend .lato_regular_base;
+//     font-size: 13px;
+// }
+// .lato_regular_14{
+//     @extend .lato_regular_base;
+//     font-size: 14px;
+// }
+
+// poppins Regular
+.gilda_base {
+  font-family: 'Gilda Display', serif;
+}
+.gilda_regular {
+  @extend .gilda_base;
+  font-weight: 400;
+}

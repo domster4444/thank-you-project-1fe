@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+:root {
+  font-size: 10px;
+  @include media('<=1015px') {
+    font-size: 8px;
+  }
+  @include media('<=phone') {
+    font-size: 7px;
+  }
+}
+
+* {
+  transition: all ease-in-out 600ms;
+  user-select: none;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  // background-color: white;
+  background-color: rgb(225, 211, 200);
+}
+
+// !remove blue background in mobile screen
+* {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-highlight: none;
+}
+button,
+div {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-highlight: none;
+}
+a {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-highlight: none;
+}
+::selection {
+  background-color: transparent;
+  color: transparent;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  outline: none;
+}
+.cursor {
+  cursor: pointer;
+}
