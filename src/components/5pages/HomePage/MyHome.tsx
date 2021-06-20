@@ -21,9 +21,14 @@ export default function MyHome() {
     baseURL: 'https://thank-you-backend.herokuapp.com/message',
   });
   function getMessage() {
-    getMessageInstance.get('/get').then((res: any) => {
-      setAllMessage(res.data.userData);
-    });
+    getMessageInstance
+      .get('/get')
+      .then((res: any) => {
+        setAllMessage(res.data.userData);
+      })
+      .catch((error) => {
+        console.log('error occured while getting data aft pressing submit btn');
+      });
   }
   getMessage();
 
