@@ -10,6 +10,8 @@ import Button from 'react-bootstrap/Button';
 // ------------------STYLED COMPONENT---------------
 import { ThankYouCard } from '../../2molecules/ThankYouCard/ThankYouCard';
 export default function MyHome() {
+  let textarea = document.querySelector('textarea') as HTMLTextAreaElement;
+
   // -------------------STATE OF FORM VALUE
   const [message, setMessage] = useState('');
   const [allMessage, setAllMessage] = useState([]);
@@ -52,7 +54,6 @@ export default function MyHome() {
 
     getMessage();
 
-    let textarea = document.querySelector('textarea') as HTMLTextAreaElement;
     textarea.value = '';
   };
 
