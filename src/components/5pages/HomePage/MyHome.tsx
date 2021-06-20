@@ -16,7 +16,7 @@ export default function MyHome() {
 
   // ********************************FUNCTIONS************************
   const getMessageInstance = axios.create({
-    baseURL: 'http://localhost:5000/message',
+    baseURL: 'https://thank-you-backend.herokuapp.com/message',
   });
   function getMessage() {
     getMessageInstance.get('/get').then((res: any) => {
@@ -38,7 +38,7 @@ export default function MyHome() {
     console.log('SUBMITTED__________________-');
 
     axios
-      .post('http://localhost:5000/message/add', {
+      .post('https://thank-you-backend.herokuapp.com/message/add', {
         data: {
           message: message,
         },
