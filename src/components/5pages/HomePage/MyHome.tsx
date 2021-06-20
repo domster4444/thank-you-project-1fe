@@ -46,13 +46,11 @@ export default function MyHome() {
         },
       })
       .then((res) => {
-        console.log(res.data);
+        getMessage();
       })
       .catch((error) => {
         console.log(error);
       });
-
-    getMessage();
 
     textarea.value = '';
   };
